@@ -1,81 +1,152 @@
 <template>
-  <div>
+  
+  
     <div class="con_right">
-      <div class="con_title">
-        <div class="stsy">
-          <span>系统首页</span>
-        </div>
-      </div>
-      <div class="con_con">
-        <div class="con_con_top">
-          <div class="top_left">
-            <div class="tu"><img src="../../assets/1.png" alt="" /></div>
-            <div class="zi">
-              <p>登录账号：1436251959</p>
-              <p>姓名：111</p>
-              <p>上次登录时间：2021年10月23日13:56:11</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+			<div class="con_con">
+				<div class="d3">
+					天猫超市TMALL.MART
+				</div>
+				<div class="d4">
+					<img src="@/assets/b2.png"/>
+				</div>
+				<div class="d5">
+					<div class="d10">
+						<p class="d6">
+							<span id="d7">今日疯抢</span>
+							<span id="d8">量贩装</span>
+						</p>
+						<p class="d9"><img src="@/assets/b3.png"/></p>
+					</div>
+				</div>
+				<div class="e1" style="margin-left: 10px;margin-top: 60px;">
+					<p id="e2"><img src="@/assets/b4.png"/></p>
+					<p id="e3" style="margin-top: 10px;">陈克明面条老妈厨房</p>
+					<p id="e3">劲道挂面900g*3麦香</p>
+					<p id="e4">¥25.9</p>
+				</div>
+       
+			</div>
+		</div>
+
 </template>
+<script>
+export default {
+  name: "Home",
+  components: {
+  
+  },
+ 
+ 
+};
+</script>
 <style lang="scss">
-.con_right {
-  width: 999px;
+.con_right{
+	width: 999px;
   height: 549px;
-  // background: green;
   border-left: 1px solid gray;
-  .con_title {
-    width: 100%;
-    height: 50px;
-    background: rgb(20, 20, 20);
-    border-bottom: 1px solid gray;
-    .stsy {
-      font-size: 15px;
-      width: 100px;
-      line-height: 50px;
-      color: white;
-      margin-left: 20px;
-    }
-  }
-  .con_con {
-    width: 100%;
-    height: 498px;
-    // background: yellow;
-    .con_con_top {
-      width: 100%;
-      height: 200px;
-      background: rgb(20, 20, 20);
-      // background: green;
-      border-bottom: 1px solid gray;
-      .top_left {
-        width: 330px;
-        height: 199px;
-        // background: yellow;
-        display: flex;
-        align-items: center;
-        .tu {
-          width: 66px;
-          height: 65px;
-          img {
-            width: 66px;
-            height: 65px;
-          }
-        }
-        .zi {
-          width: 234px;
-          height: 134px;
-          // background: pink;
-          font-size: 12px;
-          line-height: 40px;
-          text-align: left;
-          margin-left: 20px;
-          color: white;
-        }
-      }
-    }
-  }
+}
+.con_con{
+	 width: 100%;
+  height: 498px;
+}
+.d3{
+	width: 210px;
+	height: 25px;
+	background-color: rgb(0,178,98);
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	float: left;
+}
+
+.d4{
+	width: 237px;
+	height: 619px;
+	float: left;
+	margin-top: 25px;
+	margin-left: -224px;
+}
+.d4>img{
+  width: 210px;
+  height: 524px;
+}
+.d5{
+	width: 487px;
+	height: 300px;
+	background-color: rgb(254,254,254);
+	float: left;
+	margin-left: 10px;
+	margin-top: 60px;
+}
+.d10{
+	width: 361px;
+	height: 283px;
+	float: left;
+	// margin-top: 10px;
+	margin-left: 13px;
+	background-color: white;
+}
+.d6{
+	width: 461px;
+	height: 57px;
+	float: left;
+}
+#d7{
+	width: 230px;
+	height: 57px;
+	float: left;
+	background-color: rgb(0,178,98);
+	color: white;
+	font-size: 17px;
+	text-align: center;
+	line-height: 57px;
+}
+#d8{
+	width: 230px;
+	height: 57px;
+	float: right;
+	background-color: rgb(241,241,241);
+	color: black;
+	font-size: 17px;
+	text-align: center;
+	line-height: 57px;
+}
+.d9{
+	width:461px;
+    height: 121px;
+    float: left;
+}
+.e1{
+	width: 238px;
+	height: 300px;
+	float: left;
+	background-color: white;
+}
+#e2{
+	width: 187px;
+	height: 185px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 24px;
+}
+#e3{
+	width: 145px;
+	height: 20px;
+	float: left;
+	color: black;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 40px;
+}
+#e4{
+	width: 55px;
+	height: 20px;
+	float: left;
+	color: red;
+	margin-left: 90px;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 20px;
 }
 </style>

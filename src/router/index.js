@@ -39,7 +39,12 @@ const routes = [
       path: 'cart',
       name: 'cart',
       component: () => import('../views/kcgl/cart.vue'),
-     }
+     },
+     {
+      path: 'me',
+      name: 'me',
+      component: () => import('../views/me/index.vue'),
+     },
     ]
 
 
